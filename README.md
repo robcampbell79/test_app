@@ -4,14 +4,14 @@ All the pieces of the test_app project that were altered:
 
 routes/web.php - I added the line Route::resource('mytest', 'TestController');
 
-app/Mytest.php - I created this php file to act as a custom model
+app/Mytest.php - I created this php file to act as a custom model which has the function Call() which uses curl to hit upon the json api go server
 
-app/Http/Controllers/TestController.php - I created this php file to act as a custom controller
+app/Http/Controllers/TestController.php - I created this php file to act as a custom controller which passes the json object from the model the view
 
 resources/views/layout.blade.php - I created this php file to act as a template for other views
 
-resources/views/mytest - I created the folder mytest
+resources/views/mytest - I created the folder mytest to fold my custom view files
 
-resources/views/mytest/index.blade.php - I created this php file to act as a custom view that displays the json from the go server
+resources/views/mytest/index.blade.php - I created this php file to act as a custom view that displays the json from the go server that is passed in from the controller
 
 I believe everything else in test_app is out of the box for a Laravel project.
