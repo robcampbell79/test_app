@@ -8,6 +8,8 @@ The view is found at: resources/views/mytest/index.blade.php
 
 Side note, index.blade.php uses a template found at: resources/views/layout.blade.php
 
+-------------------------------------------------------------------------------------
+
 All the pieces of the test_app project that were altered:
 
 routes/web.php - I added the line Route::resource('mytest', 'TestController');
