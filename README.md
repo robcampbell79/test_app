@@ -12,3 +12,5 @@ resources/views/layout.blade.php - I created this php file to act as a template 
 resources/views/mytest - I created the folder mytest
 
 resources/views/mytest/index.blade.php - I created this php file to act as a custom view that displays the json from the go server
+
+I believe everything else in test_app is out of the box for a Laravel project.
