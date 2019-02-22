@@ -6,7 +6,7 @@ routes/web.php - I added the line Route::resource('mytest', 'TestController');
 
 app/Mytest.php - I created this php file to act as a custom model which has the function Call() which uses curl to hit upon the json api go server
 
-app/Http/Controllers/TestController.php - I created this php file to act as a custom controller which passes the json object from the model the view
+app/Http/Controllers/TestController.php - I created this php file to act as a custom controller which passes the json object from the model to the view
 
 resources/views/layout.blade.php - I created this php file to act as a template for other views
 
