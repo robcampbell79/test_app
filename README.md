@@ -2,8 +2,6 @@ A laravel created project that uses curl in the model to hit on an api endpoint 
 
 The model is found at: app/Mytest.php
 
-The controller is found at: app/Http/Controllers/TestController.php
-
 The view is found at: resources/views/mytest/index.blade.php
 
 Side note, index.blade.php uses a template found at: resources/views/layout.blade.php
@@ -12,9 +10,7 @@ Side note, index.blade.php uses a template found at: resources/views/layout.blad
 
 All the pieces of the test_app project that were altered:
 
-routes/web.php - I added the line Route::resource('mytest', 'TestController'); This has changed, update below.
-
-Update from above: routes/web.php - Laracasts, videos on using Laravel, suggested setting routes in this way, thus I added 
+routes/web.php - Laracasts, videos on using Laravel, suggested setting routes in this way, thus I added 
 
     Route::get('/mytest', function () {
 
@@ -29,8 +25,6 @@ Update from above: routes/web.php - Laracasts, videos on using Laravel, suggeste
 
 
 app/Mytest.php - I created this php file to act as a custom model which has the function Call() which uses curl to hit upon the json api go server
-
-app/Http/Controllers/TestController.php - I created this php file to act as a custom controller which passes the json object from the model to the view
 
 resources/views/layout.blade.php - I created this php file to act as a template for other views
 
