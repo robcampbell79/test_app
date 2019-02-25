@@ -15,4 +15,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('mytest', 'TestController');
+Route::get('/mytest', function () {
+
+  $mytestModel;
+
+  $this->mytestModel = new \App\Mytest();
+
+  $data = $this->mytestModel->Call();
+
+  return view('mytest.index')->with('data', $data);
+
+});
+
+// Route::resource('mytest', 'TestController');
