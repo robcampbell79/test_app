@@ -14,7 +14,7 @@ All the pieces of the test_app project that were altered:
 
 routes/web.php - I added the line Route::resource('mytest', 'TestController'); This has changed, update below.
 
-Update from above: routes/web.php - I added 
+Update from above: routes/web.php - Laracasts, videos on using Laravel, suggested setting routes in this way, thus I added 
 
     Route::get('/mytest', function () {
 
