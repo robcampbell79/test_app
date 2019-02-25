@@ -26,5 +26,3 @@ Route::get('/mytest', function () {
   return view('mytest.index')->with('data', $data);
 
 });
-
-// Route::resource('mytest', 'TestController');
