@@ -14,7 +14,8 @@ All the pieces of the test_app project that were altered:
 
 routes/web.php - I added the line Route::resource('mytest', 'TestController'); This has changed, update below.
 
-Update from above: routes/web.php - I added 
+Update from above: routes/web.php - I added {
+
 Route::get('/mytest', function () {
 
     $mytestModel;
@@ -25,6 +26,7 @@ Route::get('/mytest', function () {
     
     return view('mytest.index')->with('data', $data);
 });
+}
 
 app/Mytest.php - I created this php file to act as a custom model which has the function Call() which uses curl to hit upon the json api go server
 
